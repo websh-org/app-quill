@@ -1,0 +1,25 @@
+{
+  "v": 0,
+  "name": "jExcel",
+  "icon": "icon.png",
+  "description": "jExcel spreadsheet editor for WebShell",
+  "version": "3.5.0",
+  "license": "ISC",
+  "homepage": "https://github.com/websh-org/app-jexcel#readme",
+  "repository": "https://github.com/websh-org/app-jexcel.git",
+  "api": {
+    "file": {
+      "formats": {
+        "jexcel": {
+          "label": "jexcel File",
+          "type": "application/json",
+          "extension": "jexcel",
+          "encoding": "text",
+          "new": true,
+          "open": true,
+          "save": true
+        }
+      }
+    }
+  }
+}
