@@ -1,21 +1,36 @@
 {
   "v": 0,
-  "name": "jExcel",
-  "icon": "icon.png",
-  "description": "jExcel spreadsheet editor for WebShell",
-  "version": "3.5.0",
-  "license": "ISC",
-  "homepage": "https://github.com/websh-org/app-jexcel#readme",
-  "repository": "https://github.com/websh-org/app-jexcel.git",
+  "name": "Quill",
+  "icon": "quill-logo.png",
+  "description": "Quill rich text editor for WebShell",
+  "version": "1.3.7",
+  "license": "MIT",
+  "homepage": "https://github.com/websh-org/app-quill#readme",
+  "repository": "https://github.com/websh-org/app-quill.git",
   "api": {
     "file": {
       "formats": {
-        "jexcel": {
-          "label": "jexcel File",
+        "quill": {
+          "label": "Quill File",
           "type": "application/json",
-          "extension": "jexcel",
+          "extension": "quill",
           "encoding": "text",
           "new": true,
+          "open": true,
+          "save": true
+        },
+        "html": {
+          "label": "HTML File",
+          "type": "text/html",
+          "extension": "html",
+          "encoding": "text",
+          "save": true
+        },
+        "text": {
+          "label": "Text File",
+          "type": "text/plain",
+          "encoding": "text",
+          "extension": "txt",
           "open": true,
           "save": true
         }

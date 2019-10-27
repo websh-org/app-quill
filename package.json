@@ -1,28 +1,29 @@
 {
-  "description": "jExcel spreadsheet editor for WebShell",
+  "description": "Quill rich text editor for WebShell",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/websh-org/app-jexcel.git"
+    "url": "git+https://github.com/websh-org/app-quill.git"
   },
   "keywords": [
     "websh",
     "webshell",
-    "app-jexcel"
+    "app-quill"
   ],
   "scripts": {
-    "dev": "(cd src; PORT=42006 parcel index.html)",
-    "build": "(rm -rf docs/*; cd src; NODE_ENV=production parcel build index.html --public-url=/app-jexcel --out-dir=../docs)",
+    "dev": "(cd src; PORT=42003 parcel index.html)",
+    "build": "(rm -rf docs/*; cd src; NODE_ENV=production parcel build index.html --public-url=/app-quill --out-dir=../docs)",
     "publish": "npm run build; git add -A; git commit -m publish; git push"
   },
   "author": "Zoran Obradović, Ljudmila.org",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/websh-org/app-jexcel/issues"
+    "url": "https://github.com/websh-org/app-quill/issues"
   },
-  "homepage": "https://websh.org/packages/app-jexcel/",
+  "homepage": "https://websh.org/packages/app-quill/",
   "private": true,
   "dependencies": {
-    "@websh/web-shell-app": "^0.1.1"
+    "@websh/web-shell-app": "^0.1.3",
+    "quill": "^1.3.7"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
