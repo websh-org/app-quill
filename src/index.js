@@ -12,7 +12,12 @@ var editor = new Quill('#editor', {
 WebShellApp.command('file-open',({format,content,extension})=>{
   switch (format) {
     case "quill": 
-      editor.setContents(JSON.parse(content));
+    try {
+      const json = JSON.parse(content)
+    } catch {
+      WebShellApp.throw({error:"file-cannot-open"})
+    }
+    editor.setContents();
       break;
     case "text":
       editor.setText(content);
