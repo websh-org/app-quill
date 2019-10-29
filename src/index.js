@@ -14,11 +14,11 @@ WebShellApp.command('file-open',({format,content,extension})=>{
     case "quill": 
     try {
       const json = JSON.parse(content)
+      editor.setContents(json);
     } catch {
-      WebShellApp.throw({error:"file-cannot-open"})
+      WebShellApp.throw("file-cannot-open",{reason:"Invalid JSON"})
     }
-    editor.setContents();
-      break;
+    break;
     case "text":
       editor.setText(content);
       break;

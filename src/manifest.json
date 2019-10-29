@@ -1,7 +1,7 @@
 {
   "v": 0,
   "name": "Quill",
-  "icon": "quill-logo.png",
+  "icon": "icon.svg",
   "description": "Quill rich text editor for WebShell",
   "version": "1.3.7",
   "license": "MIT",
@@ -9,30 +9,27 @@
   "repository": "https://github.com/websh-org/app-quill.git",
   "api": {
     "file": {
+      "new": "quill",
+      "open": ["quill","text"],
+      "save": ["quill","text","html"],
       "formats": {
         "quill": {
-          "label": "Quill File",
+          "name": "Quill File",
           "type": "application/json",
           "extension": "quill",
           "encoding": "text",
-          "new": true,
-          "open": true,
-          "save": true
         },
         "html": {
-          "label": "HTML File",
+          "name": "HTML File",
           "type": "text/html",
           "extension": "html",
           "encoding": "text",
-          "save": true
         },
         "text": {
-          "label": "Text File",
+          "name": "Text File",
           "type": "text/plain",
           "encoding": "text",
           "extension": "txt",
-          "open": true,
-          "save": true
         }
       }
     }
